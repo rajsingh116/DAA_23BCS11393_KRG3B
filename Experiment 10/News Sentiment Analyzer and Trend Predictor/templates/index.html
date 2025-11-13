@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Sentiment Analyzer</title>
+</head>
+<body>
+    <h2>Enter News Text</h2>
+    <form method="post">
+        <textarea name="news_text" rows="10" cols="80" placeholder="Paste news article here..."></textarea><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if prediction %}
+        <h3>{{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
